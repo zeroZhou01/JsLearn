@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM简单修改标签属性和简单修改标签体内容</title>
+	</head>
+	<body>
+		 <img id="id-img" src="01.jpg">
+		 <p id="slogan">悔创阿里杰克马</p>
+		 <script>
+			
+			alert("我要换图片了");	
+			var img=document.getElementById("id-img");
+			img.src="02.jpg";
+			alert("我要换字体了");
+			var slogan=document.getElementById("slogan");
+			slogan.innerHTML="不是凄美刘强东"
+			
+		 </script>
+	</body>
+</html>

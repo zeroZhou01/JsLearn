@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Fuction对象求和</title>
+	</head>
+	<body>
+	<!--这个例子用来验证argument数组内置对象-->
+		<script>
+			function fun1()
+			{
+				var sum=0;
+				for(var i=0;i<arguments.length;i++)
+				{
+					sum=sum+arguments[i];
+				}
+				alert(sum);
+			}
+			fun1(1,2,4,5,6);
+		</script>
+	</body>
+</html>

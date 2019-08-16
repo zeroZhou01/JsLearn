@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML网页骨架</title>
+	</head>
+	<body>
+			<img id="id-img" src="off.jpg" />
+			<script>
+				var img=document.getElementById("id-img");
+				var flag=false;
+				function fun()
+				{
+				
+					if(flag)
+					{
+						img.src="off.jpg";
+						flag=false;
+					}
+					else
+					{
+						img.src="on.jpg";
+						flag=true;
+					}
+			
+					
+				}
+				img.onclick=fun;
+			
+			</script>
+			
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>简单事件初体验</title>
+	</head>
+	<body>
+		 <img id="id-img" src="01.jpg" onclick=fun_onclick(); />
+		 <p id="slogan">悔创阿里杰克马</p>
+		 <script>
+			
+				function fun_onclick( )
+					{
+						alert("我被点了");
+					}
+			<!--第二种-->
+			  	var img=document.getElementById("id-img");
+				img.onclick=fun_onclick;
+		 </script>
+	</body>
+</html>
